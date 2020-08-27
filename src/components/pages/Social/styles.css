@@ -1,0 +1,21 @@
+.social-content {
+    background-image: url('../../../backgroundImage/background2.jpg');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.8);
+
+    text-align: center;
+    padding-bottom: 20px;
+}
+.social-content .social-qrcode img {
+    margin-top: 10px;
+    border-radius: 20px;
+    max-height: 200px;
+}
+
+/* .social-content .title-content {
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #000;
+}
+ */

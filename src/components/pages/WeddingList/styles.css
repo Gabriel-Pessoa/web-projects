@@ -1,0 +1,183 @@
+.wedding-content {
+    background-color: #fff;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payments-content {
+    max-width: 450px;
+}
+
+.payments-content * {
+    font-family: sans-serif;
+}
+
+.form-free-content {
+    margin: 10px;
+}
+
+.form-free-content form {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.form-free-content form fieldset p{
+    text-align: start;
+    font-weight: bold;
+
+}
+
+.form-free-content form fieldset input{
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.transfer-content {
+    background-color: #A5C7EE;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.payments-content p, .payments-content p strong,
+.payments-content p a{
+    font-weight: 500;
+    margin: 0px;
+}
+
+.payments-content p a:hover {
+    text-decoration: none;
+}
+
+.payments-content p strong {
+    font-weight: bold;
+}
+
+.billet-content {
+    background-color: #B4ED8C;
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.billet-description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-family: sans-serif;
+
+}
+
+.credit-card-content {
+    background-color: #FFFF96;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.credit-card-description {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.payments-content i{
+    margin-left: 10px;
+}
+
+.gifts-list-title {
+    margin-top: 20px;
+}
+
+.wedding-list {
+    padding: 20px 0px;
+}
+
+.wedding-list table{
+  width: 100%;
+}
+
+.wedding-list table * {
+    font-family: sans-serif;
+}
+
+.wedding-list table, .wedding-list th,
+.wedding-list td {
+    border-bottom: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.wedding-list th, .wedding-list td {
+    padding: 5px;
+}
+
+.wedding-list th {
+    background-color: #ffc600;
+    color: #000;
+}
+
+.wedding-list button {
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: #ffc600;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.wedding-list button:active {
+    background-color: rgba(76, 175, 80, 0.5);
+}
+
+.wedding-list tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.wedding-list tfoot * {
+    font-size: 1.5rem;
+}
+.wedding-content tfoot span {
+    font-size: 0.8rem;
+}
+
+.table-img {
+    text-align: center;
+}
+
+.wedding-list td img {
+    max-height: 120px;
+}
+
+.buttons-quota {
+  text-align: center;
+}
+
+.wedding-list tfoot tr {
+    text-align: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.input-final-price {
+    height: 30px;
+    width: 200px;
+    margin: 10px;
+}
+
+.warning span {
+    display: block;
+}
+
+@media(max-width: 576px) {
+    .wedding-list td img {
+        max-height: 75px;
+    }
+}

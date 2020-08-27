@@ -1,0 +1,17 @@
+.footer {
+    background-color: #DDD;
+    color: #333;
+    
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer .icon, .footer span {
+    margin-right: 10px;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}

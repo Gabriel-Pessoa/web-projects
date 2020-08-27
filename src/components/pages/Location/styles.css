@@ -1,0 +1,32 @@
+.location {
+    background-image: url('../../../backgroundImage/background2.jpg');
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(0.8);
+
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.present-guests, .remote-guests {
+    margin-top: 20px;
+}
+
+.location p {
+    font-size: 1.3rem;
+}
+
+.location a:hover {
+    text-decoration: none;
+}
+
+.location .title-content {
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #000;
+}
+
+.present-guests .map {
+    border-radius: 20px;
+}
+
