@@ -376,7 +376,7 @@ function WeddingList() {
             </tr>
             <tr>
               <td colSpan="6">
-                <p>*Digite seu nome e clique no botão pagar abaixo:</p>
+                <p>*Digite seu nome e clique no botão doar abaixo:</p>
                 <input
                   className="input-final-price"
                   type="text"
