@@ -319,6 +319,9 @@ function WeddingList() {
                 <input name="itemAmount1" type="hidden" value={valuePagSeguro.creditCardValue} />
                 <input name="itemQuantity1" type="hidden" value="1" />
                 <input name="senderEmail" type="hidden" value="casamentoitaloedebora@gmail.com" />
+                <input name="shippingAddressPostalCode" type="hidden" value="51230360" />
+                <input name="shippingAddressNumber" type="hidden" value="34" />
+                <input name="shippingAddressComplement" type="hidden" value="sem complemento" />
 
                 <input alt="Doar com PagSeguro" name="submit" type="image"
                   src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar.gif" />
@@ -384,6 +387,7 @@ function WeddingList() {
                   onChange={(e) => setFinalName(e.target.value)}
                   value={finalName}
                 />
+                
                 <form method="post" name="finalPriceForm" onSubmit={handleSubmit} ref={finalPriceRef}
                   action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
                   <input name="receiverEmail" type="hidden" value="ytpessoa@gmail.com" />
@@ -394,6 +398,9 @@ function WeddingList() {
                   <input name="itemAmount1" type="hidden" value={`${parseString}`} />
                   <input name="itemQuantity1" type="hidden" value="1" />
                   <input name="senderEmail" type="hidden" value="casamentoitaloedebora@gmail.com" />
+                  <input name="shippingAddressPostalCode" type="hidden" value="51230360" />
+                  <input name="shippingAddressNumber" type="hidden" value="34" />
+                  <input name="shippingAddressComplement" type="hidden" value="sem complemento" />
 
                   <input alt="Doar com PagSeguro" type="image"
                     src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar.gif" />
