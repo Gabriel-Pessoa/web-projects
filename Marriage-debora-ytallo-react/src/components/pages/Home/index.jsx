@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-import music from './music/music1.ogg';
+import music from './music/music1.mp3';
 
 import './styles.css';
 
@@ -82,7 +82,7 @@ function Home() {
 
                 <p className="description-main">&nbsp;&nbsp;&nbsp;Queremos compartilhar com vocês um pouco do nosso sonho: o casamento.
                 Agradecemos a Deus por você fazer parte da nossa história. Somos gratos a Deus por tão grandes bençãos. A Ele a Glória para todo o sempre. Amém!</p>
-                <div className="player">
+                <div className="player"> 
                     <ReactAudioPlayer
                         src={music}
                         controls

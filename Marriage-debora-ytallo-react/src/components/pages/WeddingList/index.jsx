@@ -144,21 +144,21 @@ function WeddingList() {
     // Popup de sucesso!
     swal({
       title: `${nameUser.toUpperCase()}`,
-      text: 'Obrigado pelo sua carinho em nos ajudar!',      
+      text: 'Obrigado pelo sua carinho em nos ajudar!',
       icon: "success",
-      timer: 7000,
+      timer: 6000,
       //button: false,
       button: {
-        text: "Redirecionando para Página de Doação...",        
+        text: "Redirecionando para Página de Doação...",
       },
-      
+
       //dangerMode: false,
     });
 
-    // envia o formulário depois de 7 segundos
+    // envia o formulário depois de 6 segundos
     setTimeout(() => {
       currentForm.current.submit();
-    }, 7000);
+    }, 6000);
 
   }
 
@@ -192,23 +192,25 @@ function WeddingList() {
           <i><FaBarcode size="100px" color="#000" /></i>
 
           <div className="billet-description">
+            <p><strong>BOLETO BANCÁRIO (duas opções):</strong></p>
+            <br />
             <ul>
-              <p><strong>BOLETO BANCÁRIO (duas opções):</strong></p>
 
               <li>
                 <strong>1º opção - através de:</strong>
-                <ul>
-                  <li>
-                  WhatsApp:<a href="tel:+55081992167110">(81) 9.9216-7110 (clique)</a>  </li>
-                  <li>
-                  Email:  <a href="mailto:casamentoitaloedebora@gmail.com"> casamentoitaloedebora@gmail.com </a>
-                  </li>
-                </ul>
-              </li>
 
+                <p>
+                  - WhatsApp:<a href="tel:+55081992167110"> (81) 9.9216-7110 (clique)</a>
+                </p>
+                <p>
+                  - Email: <a href="mailto:casamentoitaloedebora@gmail.com">casamentoitaloedebora@gmail.com </a>
+                </p>
+
+              </li>
+              <br />
               <li>
                 <strong>2º opção</strong>
-                <span> - Digite NOME e VALOR e 
+                <span> - Digite NOME e VALOR e
                   clique no botão DOAR abaixo:</span>
                 <div className="form-free-content">
                   <form>
@@ -241,11 +243,12 @@ function WeddingList() {
                 </div>
 
               </li>
+
             </ul>
 
             <div className="form-pagseguro">
 
-              <form method="post" name="billetForm" target="pagseguro" onSubmit={handleSubmit} ref={billetRef}
+              <form method="post" name="billetForm" onSubmit={handleSubmit} ref={billetRef}
                 action="https://pagseguro.uol.com.br/v2/checkout/payment.html" >
                 <input name="receiverEmail" type="hidden" value="ytpessoa@gmail.com" />
                 <input name="currency" type="hidden" value="BRL" />
@@ -255,11 +258,14 @@ function WeddingList() {
                 <input name="itemAmount1" type="hidden" value={valuePagSeguro.billetValue} />
                 <input name="itemQuantity1" type="hidden" value="1" />
                 <input name="senderEmail" type="hidden" value="casamentoitaloedebora@gmail.com" />
+                <input name="shippingAddressPostalCode" type="hidden" value="51230360" />
+                <input name="shippingAddressNumber" type="hidden" value="34" />
+                <input name="shippingAddressComplement" type="hidden" value="sem complemento" />
 
                 <input alt="Doar com PagSeguro" type="image"
                   src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar.gif" />
               </form>
-        
+
             </div>
 
           </div>
@@ -303,7 +309,7 @@ function WeddingList() {
 
             </ul>
             <div>
-              <form method="post" name="creditCardForm" target="pagseguro" onSubmit={handleSubmit} ref={creditCardRef}
+              <form method="post" name="creditCardForm" onSubmit={handleSubmit} ref={creditCardRef}
                 action="https://pagseguro.uol.com.br/v2/checkout/payment.html" >
                 <input name="receiverEmail" type="hidden" value="ytpessoa@gmail.com" />
                 <input name="currency" type="hidden" value="BRL" />
@@ -378,7 +384,7 @@ function WeddingList() {
                   onChange={(e) => setFinalName(e.target.value)}
                   value={finalName}
                 />
-                <form method="post" name="finalPriceForm" target="pagseguro" onSubmit={handleSubmit} ref={finalPriceRef}
+                <form method="post" name="finalPriceForm" onSubmit={handleSubmit} ref={finalPriceRef}
                   action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
                   <input name="receiverEmail" type="hidden" value="ytpessoa@gmail.com" />
                   <input name="currency" type="hidden" value="BRL" />
@@ -389,8 +395,8 @@ function WeddingList() {
                   <input name="itemQuantity1" type="hidden" value="1" />
                   <input name="senderEmail" type="hidden" value="casamentoitaloedebora@gmail.com" />
 
-                  <input alt="Pague com PagSeguro" name="submit" type="image"
-                    src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif" />
+                  <input alt="Doar com PagSeguro" type="image"
+                    src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar.gif" />
                 </form>
 
                 <div className="warning">
@@ -404,6 +410,8 @@ function WeddingList() {
         </table>
 
       </div>
+      {console.log('Current', billetRef.current)}
+      {console.log('Inteiro', billetRef)}
 
     </div>
   );

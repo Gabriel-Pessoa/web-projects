@@ -42,7 +42,7 @@
     background-color: #A5C7EE;
     display: flex;
     align-items: center;
-    padding: 5px 0px;
+    padding: 20px;
 }
 
 .payments-content p, .payments-content p strong,
@@ -63,7 +63,7 @@
     background-color: #B4ED8C;
     display: flex;
     align-items: center;
-    padding: 5px 0px;
+    padding: 20px 5px;
 }
 
 .billet-description {
@@ -71,7 +71,10 @@
    flex-direction: column;
    align-items: center;
    font-family: sans-serif;
+}
 
+.billet-description a{
+    font-size: 15px;
 }
 
 .credit-card-content {
@@ -79,6 +82,7 @@
     padding: 5px 0px;
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .credit-card-description {
