@@ -49,7 +49,7 @@ function Home() {
     const timerComponents = [];
 
     Object.keys(timeLeft).forEach(interval => {
-        if (!timeLeft[interval]) return; // == false (null, unefined)
+        if (!timeLeft[interval]) return; // == false (null, undefined)
 
         /*Depois de iterar as chaves em timeLeft, você usará essa variável para enviar 
           um novo componente JSX com o tempo restante. */

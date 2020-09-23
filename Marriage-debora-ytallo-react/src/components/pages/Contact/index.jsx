@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi'
-import { GrGroup } from 'react-icons/gr'
+import { FiMail } from 'react-icons/fi';
+import { MdGroup } from 'react-icons/md';
 
 import './styles.css';
 
@@ -27,7 +27,7 @@ function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     >
-                    <GrGroup size="25px" /> Entre no grupo de WhatsApp
+                    <MdGroup color="#008000" size="25px" /> Participe do grupo de WhatsApp
                 </a>
             </p>
             <p>

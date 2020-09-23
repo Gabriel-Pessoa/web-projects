@@ -6,36 +6,8 @@
     align-items: center;
 }
 
-.payments-content {
-    max-width: 450px;
-}
-
-.payments-content * {
-    font-family: sans-serif;
-}
-
-.form-free-content {
-    margin: 10px;
-}
-
-.form-free-content form {
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.form-free-content form fieldset p{
-    text-align: start;
-    font-weight: bold;
-
-}
-
-.form-free-content form fieldset input{
-    background-color: #fff;
-    border: 1px solid #000;
+.subtitle-list-donations {
+    margin: 50px 0;
 }
 
 .transfer-content {
@@ -45,8 +17,47 @@
     padding: 20px;
 }
 
-.payments-content p, .payments-content p strong,
-.payments-content p a{
+.form-free-content {
+    height: 100%;
+    width: 205px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.form-free-content form div {
+    margin-top: 5px;
+}
+
+.form-free-content form p {
+    font-weight: bold;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postal-code-content input {
+    width: 100px;
+}
+
+.address-number-content input {
+    width: 50px;
+}
+
+.form-pagseguro-billet {
+    margin-top: 10px;
+}
+
+.payments-content {
+    max-width: 450px;
+}
+
+.payments-content * {
+    font-family: sans-serif;
+}
+
+.payments-content p {
     font-weight: 500;
     margin: 0px;
 }
@@ -63,7 +74,7 @@
     background-color: #B4ED8C;
     display: flex;
     align-items: center;
-    padding: 20px 5px;
+    padding: 20px;
 }
 
 .billet-description {
@@ -73,33 +84,45 @@
    font-family: sans-serif;
 }
 
+.billet-description ul {
+    margin: 0;
+}
+
+.billet-description li {
+    margin-top: 10px;
+}
+
 .billet-description a{
     font-size: 15px;
 }
 
 .credit-card-content {
     background-color: #FFFF96;
-    padding: 5px 0px;
     display: flex;
     align-items: center;
     padding: 20px;
 }
 
 .credit-card-description {
-    display: flex;
+   display: flex;
    flex-direction: column;
    align-items: center;
+   margin: 0 auto;
 }
-.payments-content i{
-    margin-left: 10px;
+
+.credit-card-description .form-pagseguro {
+    margin-top: 10px;
 }
 
 .gifts-list-title {
-    margin-top: 20px;
+    margin: 50px;
+    text-align: center;
 }
 
-.wedding-list {
-    padding: 20px 0px;
+.gifts-list-title span {
+    color: red;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .wedding-list table{
@@ -125,6 +148,22 @@
     color: #000;
 }
 
+.wedding-list .text-align-center {
+    text-align: center;
+}
+
+.wedding-list tbody .table-img {
+    text-align: center;
+}
+
+.wedding-list td img {
+    max-height: 120px;
+}
+
+.wedding-list tbody .buttons-quota {
+    text-align: center;
+}
+
 .wedding-list button {
     border: none;
     color: #000;
@@ -133,7 +172,7 @@
     background-color: #ffc600;
     padding: 8px;
     border-radius: 2px;
-}
+} 
 
 .wedding-list button:active {
     background-color: rgba(76, 175, 80, 0.5);
@@ -143,37 +182,34 @@
     background-color: #f5f5f5;
 }
 
-.wedding-list tfoot * {
-    font-size: 1.5rem;
-}
-.wedding-content tfoot span {
-    font-size: 0.8rem;
-}
-
-.table-img {
-    text-align: center;
-}
-
-.wedding-list td img {
-    max-height: 120px;
-}
-
-.buttons-quota {
-  text-align: center;
-}
-
 .wedding-list tfoot tr {
     text-align: center;
 }
 
-.text-align-center {
+.wedding-list tfoot .form-cell {
+    padding: 10px 0px;
     text-align: center;
 }
 
-.input-final-price {
-    height: 30px;
-    width: 200px;
-    margin: 10px;
+.form-cell .form-free-content  {
+    line-height: 1.0rem;
+}
+
+.form-cell .form-free-content div {
+    margin: 0;
+}
+
+.form-cell .form-free-content div p {
+    margin: 8px 0px;
+}
+
+.form-cell form {
+    margin-top: 10px;
+}
+
+.warning-click {
+    color: red;
+    margin-top: 10px;
 }
 
 .warning span {

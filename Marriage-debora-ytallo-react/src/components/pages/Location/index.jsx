@@ -1,14 +1,17 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa';
+import { GrGroup } from 'react-icons/gr';
+import { RiLiveLine } from 'react-icons/ri'
+
 
 import './styles.css';
 
 function Location() {
     return (
         <div className="location">
-            <h1 className="title-content">Cerimônia Religiosa</h1>
+            <h1 className="title-content">Cerimônia e Recepção</h1>
             <div className="present-guests">
-                <h2>Convidados Presenciais (Familiares)</h2>
+                <h2><GrGroup /> <u>Convidados Presenciais (Familiares</u>):</h2>
 
                 <p>Data: 17/10/2020.</p>
                 <p>Horário: 17h</p>
@@ -19,10 +22,11 @@ function Location() {
             </div>
 
             <div className="remote-guests">
-                <h2>Convidados Remotos (devido à pandemia)</h2>
+                <h2><RiLiveLine /> <u>Convidados Online</u>:</h2>
 
-                <p>Transmissão online através do
-                <a href="https://www.instagram.com/italoedebora/"
+                <p>Teremos transmissão online através do </p>
+                <p>
+                    <a href="https://www.instagram.com/italoedebora/"
                         target="_blank"
                         rel="noopener noreferrer"
                     > Instragram do Casamento </a>
